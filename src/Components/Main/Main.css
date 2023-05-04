@@ -1,0 +1,33 @@
+.main {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	z-index: 5;
+}
+.main__background-image--one {
+	display: none;
+}
+.main__background-image--two {
+	display: none;
+}
+.main__background-image--three {
+	display: none;
+}
+@media (min-width: 1200px) {
+	.main section {
+		width: 70%;
+	}
+	.main__background-image--one {
+		position: absolute;
+		top: 30px;
+		right: -50px;
+		display: block;
+	}
+	.main__background-image--two {
+		position: absolute;
+		left: 0;
+		top: 250px;
+		display: block;
+		transform: translateY(-50%);
+	}
+}

@@ -1,0 +1,50 @@
+.tool__box {
+	margin-top: 1.5em;
+	width: 100%;
+	font-size: 1.8rem;
+	background: linear-gradient(white, white) padding-box,
+		linear-gradient(to left, #303030, #303030) border-box;
+	border-radius: 40px;
+	border: 4px solid transparent;
+	overflow: hidden;
+	transition: 0.3s;
+}
+.tool__box.active {
+	background: linear-gradient(white, white) padding-box,
+		linear-gradient(to left, #321575, #ff057c) border-box;
+}
+.tool__box-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.8em 1.6em;
+	background-color: #eaeaea;
+	cursor: pointer;
+}
+.tool__box-title svg {
+	transition: 0.3s;
+}
+
+.box-title__info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box-title__info p {
+	margin-left: 1em;
+	font-weight: bold;
+}
+.tool-box__row {
+	padding: 0.8em 1.6em;
+	width: 100%;
+	border-bottom: 1px solid #000;
+}
+.tool-box__row:nth-last-child(1) {
+	border: none;
+}
+.tool-box__row a {
+	display: flex;
+	justify-content: space-between;
+	font-weight: bold;
+	color: #000;
+}

@@ -1,0 +1,142 @@
+.header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+	background: linear-gradient(
+		102.46deg,
+		#ff057c -0.35%,
+		#8d0b93 40.85%,
+		#321575 99.54%
+	);
+}
+.header__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin: 92px 0 80px 0;
+	width: 90%;
+	color: #fff;
+}
+.header__container-text {
+	margin: 5em 0;
+}
+.header__container-text h1 {
+	font-size: 2.5rem;
+	letter-spacing: 1px;
+}
+.header__container-text h3 {
+	margin: 0.5em 0;
+	font-size: 1.9rem;
+	font-weight: normal;
+	line-height: 140%;
+}
+.text__btn button {
+	margin-top: 0.5em;
+	padding: 0.5em 1em;
+	font-size: 1.9rem;
+	border-radius: 1em;
+	color: #fff;
+	background-color: #321575;
+}
+.header__container-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+}
+.header__container-image img {
+	width: 80%;
+	animation: float 6s ease-in-out infinite;
+}
+
+.header__wave-background {
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	background-image: url('../../assets/svg/wavesWhite.svg');
+}
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+@media (min-width: 576px) {
+	.header__container-text h1 {
+		font-size: 3rem;
+	}
+	.header__container-image img {
+		width: 60%;
+	}
+}
+@media (min-width: 820px) {
+	.header__container-text h1 {
+		font-size: 5rem;
+	}
+	.header__container-text h3 {
+		font-size: 3rem;
+	}
+	.text__btn button {
+		font-size: 2.3rem;
+	}
+}
+@media (min-width: 992px) {
+	.header__container {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.header__container-text {
+		width: 45%;
+	}
+	.header__container-text h1 {
+		font-size: 3.8rem;
+	}
+	.header__container-text h3 {
+		font-size: 2.5rem;
+		line-height: 160%;
+	}
+	.header__container-image {
+		width: 45%;
+	}
+	.header__container-image img {
+		width: 80%;
+	}
+	.header__wave-background {
+		height: 150px;
+	}
+}
+@media (min-width: 1200px) {
+	.header__container-text h1 {
+		font-size: 3.5rem;
+	}
+	.header__container-text h3 {
+		font-size: 2.2rem;
+	}
+	.text__btn button {
+		font-size: 1.8rem;
+	}
+	.header__container-image img {
+		width: 60%;
+	}
+}
+@media (min-width: 1800px) {
+	.header__container-text h1 {
+		font-size: 5rem;
+	}
+	.header__container-image img {
+		width: 75%;
+	}
+}
