@@ -11,7 +11,9 @@ function Header() {
 						UX Designera jak i Front-end developera
 					</h3>
 					<div className='text__btn'>
-						<button>Szukaj Narzędzia</button>
+						<a href='#tools'>
+							<button>Szukaj Narzędzia</button>
+						</a>
 					</div>
 				</div>
 				<div className='header__container-image'>

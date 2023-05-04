@@ -25,10 +25,9 @@ function ToolsSection() {
 		getTools();
 	}, []);
 
-
 	return (
 		<section className='section wrapper'>
-			<h2>Narzędzia</h2>
+			<h2 id='tools'>Narzędzia</h2>
 			<div className='tools__container'>
 				{tools.map((x) => {
 					return <SingleTool tool={x} key={x.icon} />;
