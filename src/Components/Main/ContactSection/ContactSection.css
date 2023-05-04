@@ -57,6 +57,9 @@
 	color: #fff;
 	border-radius: 40px;
 }
+.contact__submit-btn button:disabled {
+	background-color: #303030;
+}
 @media (min-width: 576px) {
 	.contact__submit {
 		flex-direction: row;

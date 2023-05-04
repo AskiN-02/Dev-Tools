@@ -1,11 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './SingleTool.css';
 import { FaChevronLeft } from 'react-icons/fa';
 import { FaShareSquare } from 'react-icons/fa';
 import * as Icons from 'react-icons/fa';
 function SingleTool(props) {
 	const { type, icon, content } = props.tool;
-	console.log(props);
 	const [active, setActive] = useState(false);
 
 	const DynamicFaIcon = ({ name }) => {
@@ -48,7 +47,7 @@ function SingleTool(props) {
 			</div>
 			{content.map(({ link, name }) => (
 				<div className='tool-box__row' key={link}>
-					<a href={link} target='_blank'>
+					<a href={link} target='_blank' rel='noreferrer'>
 						<p>{name}</p>
 						<FaShareSquare />
 					</a>
