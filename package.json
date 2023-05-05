@@ -1,6 +1,7 @@
 {
 	"name": "dev-tools-front-end",
 	"version": "0.1.0",
+	"homepage": "https://asskin.github.io/Dev-Tools/",
 	"private": true,
 	"dependencies": {
 		"@fortawesome/react-fontawesome": "^0.2.0",

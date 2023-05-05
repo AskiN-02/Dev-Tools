@@ -13,7 +13,7 @@ function ContactSection() {
 	}
 
 	const saveLink = async () => {
-		const linksRef = collection(db, 'Links');
+		const linksRef = collection(db, 'links');
 		try {
 			const docRef = await addDoc(linksRef, {
 				link: inputValue,
